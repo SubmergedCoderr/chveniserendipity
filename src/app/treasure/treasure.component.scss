@@ -134,9 +134,15 @@
 }
 
 .snowy-image {
-  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.8), 0 4px 8px rgba(0, 0, 0, 0.4), 0 -6px 12px rgba(173, 216, 230, 0.6);
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.507), 0 2px 4px rgba(0, 0, 0, 0.4), 0 -3px 6px rgba(173, 216, 230, 0.6);
   /* Adjust the colors, intensity, and positions as needed */
+  transition: box-shadow 0.3s ease-in-out;
 }
+
+.snowy-image-container:hover .snowy-image {
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.881), 0 2px 4px rgba(0, 0, 0, 0.4), 0 -3px 6px rgba(173, 216, 230, 0.6);
+}
+
 
 .snowy-image-container.hide {
   opacity: 0;

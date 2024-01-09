@@ -265,7 +265,21 @@ export class AppComponent implements OnInit {
       albumImage: "/assets/images/albums/tovlis_gunda_album.png",
       gradient: 'linear-gradient(112deg, rgb(139 139 139) 10%, rgb(46 46 44) 74%)',
       lyrics: "თოვლი ვიყავ ქათქათა <br> ციდან გამოვიქეცი <br> ვერ მიცანი ? კაპ კაპ კაპ კაპ <br> წვიმად გადავიქეცი <br> გუდა გუდა თეთრი გუდა <br> ხან წვიმა ვარ ხანაც გუნდა"
+    },
+
+    {
+      album: "RMCM",
+      title: "Evergreen",
+      artist: "Richy Mitch and The Coal Miners",
+      url: "/assets/Evergreen.mp3",
+      image: "/assets/images/albums/ever.jpg",
+      coverImage: "/assets/images/albums/bea.jpg",
+      albumImage: "/assets/images/albums/ever.jpg",
+      gradient: 'linear-gradient(112deg, rgb(139 139 139) 10%, rgb(46 46 44) 74%)',
+      lyrics: "Locked in a stalemate <br> With a man who bars no holds <br> Rock and a hard place <br> He's battering control "
     }
+
+
 
 
   ]

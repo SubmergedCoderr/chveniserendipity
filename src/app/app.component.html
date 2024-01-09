@@ -131,8 +131,33 @@
       Lyrics</h1>
     <div
       style="box-shadow: rgba(48, 44, 44, 0.74) 0px 3px 8px;width: fit-content; margin:0 20px 20px 20px; padding:10px 10px 10px 10px;">
-      <p *ngIf="currentMusic.lyrics" style="text-align: left; color: #d2d8d2;font-weight: 500; font-family: system-ui;"
+      <p *ngIf="currentMusic.lyrics"
+        style="text-align: left; color: #d2d8d2;font-weight: 500; font-family: system-ui; margin: 0;"
         [innerHTML]="currentMusic.lyrics">
+
+      <p *ngIf="currentMusic.lyrics && currentMusic.title == 'Love Will Tear Us Apart'"
+        style="text-align: left; color: #d2d8d2;font-weight: 500; font-family: system-ui; margin: 15px 0 0 0;">
+        Normal people-ის საუნდრეკს ვუსმენდი ადრე სპოტიფაიზე და როგორც მითხარი მაქედან დაიწყე ყურება, მე მერე გაწყვეტილი
+        მქონდა
+        რამდენიმე დღე და მაგ პერიოდში შენი დისქორდის ბაიოში რენდომად ამოვიკითხე Sad Young Man in a Train, დავსერჩე,
+        ნახატს შევხედე მეთქი რად
+        დადო ვფიქრობდი, რაღაც იდუმალი იყო და მომეწონა, მერე გავაგრძელე რამდენიმე დღეში ისევ სერიალის ყურება და
+        მეშვიდე სერიის შუაში ეგ ნახატი ახსენეს მეთქი ვახ ხო არ მომეჩვენა რამდენჯერმე გადავახვიე, სერიის ბოლოს კი ჩაირთო
+        ეს სიმღერა, მაგრად მომეწონა და ბოლო სცენა ამ ნახატით დაგვრიგვიდნა, ხოდა რავი შოკში ვიყავი მეთქი რა ხდება, მაგის
+        მერე კი ეს სიმღერა, ნახატი და რავი ის სერიაც
+        მაგრად მევასება რა(ესენი წესით მოყოლილი უნდა მქონდეს, მარა მაინც შეგახსენე უფრო დეტალურად და ამ
+        სიმღერის ატვირტვისგან გამოწვეულ ეჭვებიც წესით ჩავახშე)
+      </p>
+
+      <p *ngIf="currentMusic.lyrics && currentMusic.title == 'Evergreen'"
+        style="text-align: left; color: #d2d8d2;font-weight: 500; font-family: system-ui; margin: 15px 0 0 0;">
+        ზოგჯერ რაღაცებმა მხოლოდ ჩვენს მოგონებებში უნდა იარსებოს, არა ?
+      </p>
+
+      <img *ngIf="currentMusic.lyrics && currentMusic.title == 'Evergreen'" src="../assets/images/albums/beautiful.jpg"
+        alt="" style="margin-top: 30px; width: 90%; ">
+
+
     </div>
 
     <p *ngIf="!currentMusic.lyrics" style="text-align: left; padding:0 30px 30px 30px;">
@@ -175,6 +200,9 @@
       </p>
 
     </div>
+
+
+
   </div>
 
 </section>
