@@ -1,0 +1,238 @@
+<section class="main-section" id="main-section">
+
+  <div style="display: flex;flex-direction: column;" class="first">
+    <nav class="navbar">
+      <ul class="nav-ul">
+        <li id="index"><a routerLink="/">ელაბორაცია</a></li>
+        <li id="books"><a routerLink="/anakoko" id="kak">მოსალოცი</a></li>
+        <li id="about"><a routerLink="/chemigandzi">საგანძური</a></li>
+        <li id="contact"><a routerLink="/bye" id="contactLink">მშვიდობით</a></li>
+      </ul>
+    </nav>
+
+    <div *ngIf="showMusicsComponent && showBye && showGandzi" class="main" style="padding: 15px;">
+      <!-- <app-musics [musicList]="musicList" (musicIndex)="play($event)"></app-musics> -->
+      <div style="text-align: center; margin-bottom:5px; margin-top: 30px;">
+        <button class="btn btn-primary button-85" (click)="openDialog()">
+          არიჩიე სიმღერა
+        </button>
+      </div>
+
+      <br>
+      <br>
+      <div *ngIf="show"
+        style="  border-radius: 20px;
+      box-shadow: rgba(48, 44, 44, 0.74) 0px 3px 8px; padding: 15px; margin-bottom: 10px; background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%); text-align: center;">
+
+
+        <p style="white-space: pre-wrap; text-align: left;">
+          2023 წლის ერთ-ერთი ღამეა და შენზე დავფიქრდი, გამახსენდა განუსაზღვრელ(არ მინდა ვთქვა როდის დავფიქრდი შენზე და
+          როდის დავიწყე ამის კეთება) თვეში შენი დაბადების დღე როა და მე უბრალოდ ფიზიკურად არ მომეცა
+          შანსი რამე მეჩუქა შენთვის რომელიმე დაბადების დღეზე, პირველს თუ არ ჩავთვლით, რომელზეც გაჩუქე საათი, რომელსაც
+          ჩუქნის დღიდანვე მტრობ და ამტვერებ წიგნების თაროზე, ნუ მაგის მერე სულ ჩემს დაბადების დღეზე ვიყავით ხოლმე კარგად
+          და შენ
+          მჩუქნიდი ხოლმე, კიდევ გამახსენდა ფაქტი, როდესაც დენდროლოგიურში მითხარ რომ ზოგჯერ სხვებისგან, ნაკლებად
+          მნიშვნელოვანი ადამიანებისგან უფრო გრძნობდი დაფასებას ხოლმე ვიდრე ჩემგან, ეგ კი სიმართლე გითხრა მაგრა გამიტყდა
+          მაშინ და მახსენდებოდა ხოლმე შიგადაშიგ. შემდეგ დავფიქრდი რა შეიძლებოდა გამეკეთებინა შენთვის რო აი იმ დამღლელი
+          მატერიალური საჩუქრებისათვის მეჯობნა(დავიღალე მართლა,დღევნადელობაში ხალხს ფანტაზია დაკარგული აქვს და ერთმანეთს
+          ყველა რაღაც ბანძობას ჩუქნის), ხოდა ვიფიქრე საიტს ავუწყობ და ვატივტივებ სადმე ვებში-მეთქი, ნუ ჩემი ფანტაზია
+          ვებსაიტებსაც კი გაცდა, მაგრამ მაინც მათ დასჯერდა(not exactly, მალე გაიგებ რასაც ვგულიხმობ).
+          <br>
+          <br>
+          ამა თვის ამა ღამეს დავიწყე ამ ვებსაიტის კეთება, რამდენიმე დღე ვაკეთე, სახე გავიძრე და მერე მივატოვე კაი ხანი,
+          შემოვდე ჩემს კარადაზე და დავმტვერე, მერე საცხა შემხვდი და ისევ გამახსენდა საიტი, მარა მაინც არ გავაგრძელე,
+          ძაან
+          რო არ გავწელო და მოკლედ რომ გითხრა, ერთი გარდამტეხი მომენტი მქონდა განუსაზღვრელი დროის წინათ, როცა დავფიქრდი
+          რო უნდა
+          დამესრულებინა
+          ბოლომდინ
+          და თანაც ისე რო რავი დარწმუნებული ვყოფილიყავი ასეთ საჩუქარს თუ არა ეთ ლისტ საიტს მაინც რო არ მოგიძღვნიდა
+          არავინ,
+          არასდროს,
+          როგორი ასეთი კონკურენტუნაირაინი ბიჯი. ნუ იცი რაა, შეიძლება ვინმე მომავალში დაჯდეს სამი დღე-ღამე ნახატი
+          გიხატოს ან რამე შეგიქმნას, სახე გაიძროს, მარა რეალურად მე უფრო მეტი დრო მაქვს დათმობილი შენი 21 წლის
+          იუბილესათვის, ხოდა ნოუ
+          ვორის. თანაც არ გეგონოს რამე ტუტორიალის მიხედვით აგიწყე, ბანძად, ნო, ჩემით ვეწვალე, ისე მთლად სპოტიფაისთვის არ
+          მიმისგავსებია,
+          მარა მიუზიკ ფლეიერის დიზაინის ინსპირაცია ეგ იყო და ვხსნიდი სპოტიფაის ხოლმე და ვამთხვევდი რაცხებს, შეიძლება
+          ბოლომდე ვერც აღიქვა,
+          აი თუნდაც მუსიკა რომ გაისმის და დაბლა მიუზიკ ბარი რომ მიდის მაგას რო აჭერ და გასული ნაწილი მწვანე როა
+          დანარცენი
+          კი ნაცრისფერი, აი
+          ეგეთი დეტალების გაკეთება მაგარი წვალებაა აი მაგარიი. თითეული წამისა და მომენტის დაჭერა რო მუსიკა გაისმოდეს
+          ვებსაიტზე და
+          დიზაინიც იცვლებოდეს რელაციურად მაგაზე აღარაფერს ვამბობ, მალა ჰო, ესაა რაცაა
+
+
+          <br>
+          <br>
+          <strong>P.S</strong>
+          <br>
+          ვაღიარებ, რომ ანდრიასთან ჰორიზონტის მხარეები შემეშალა, თან რამდენიმე ჭიქა მქონდა დალეული და გავჯიუტდი,
+          არ ვაღიარებდი და მერე გამსწორებასაც კი ვცდილობდისავით, დესპერადო ვიყავი :დდ , მარა არაუშავს,
+          ხომ გაგიგია: "როგორც ერთი სიბრძნე ვერ აქცევს ადამიანს გენიოსად, ისე ერთი სისულე - იდიოტად". თანაც იმედია
+          გახსოვს
+          მხარეებზე უნარების ამოცანა ვინ აგისხნა :*
+        </p>
+        <img *ngIf="show" src="../assets/images/sidess.png" alt="" width="450" height="250"
+          style="border-radius: 10px;">
+      </div>
+
+    </div>
+
+    <div *ngIf="!showMusicsComponent" class="main">
+      <app-anakoko></app-anakoko>
+    </div>
+
+    <div *ngIf="!showBye" class="main">
+      <app-bye></app-bye>
+    </div>
+
+    <div *ngIf="!showGandzi" class="main">
+      <app-treasure *ngIf="gamomichine"></app-treasure>
+    </div>
+
+    <div class="modal fade" id="addEmployeeModal" tabindex="-1" role="dialog" aria-labelledby="addEmployeeModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" style="margin-top: 150px;" role="document">
+        <div class="modal-content"
+          style="padding: 50px; background: linear-gradient(112deg, #b0c4de 10%, #4682b4 74%); position: relative;">
+          <p style="padding: 30px; color: #fff; font-size: 18px; text-align: center;">
+            სანამ მისი აღმატებულება განაგრძობდეს იქნებ ეზოში გადაეხედა
+          </p>
+          <button type="button" id="add-employee-form" class="btn btn-secondary close" data-dismiss="modal"
+            (click)="dismissModal()" style="background-color: #fff; color: #4682b4;">
+            კაი პაკა
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="delicate" [style.background]="currentMusic.gradient">
+    <img *ngIf="currentMusic.coverImage && !tovlisGunda && currentMusic.title != 'წვიმად გადავიქეცი'"
+      [src]="currentMusic.coverImage" alt="" class="coverImage">
+    <img *ngIf="(currentMusic.coverImage && tovlisGunda) || currentMusic.title == 'წვიმად გადავიქეცი'"
+      [src]="currentMusic.coverImage" alt="" class="coverImage" style="box-shadow: none;">
+    <img *ngIf="!currentMusic.coverImage" src="../assets/images/yin&yang.jpg" alt="" class="coverImage">
+
+    <div style="margin-bottom: 15px;">
+      <h1 style="text-align: left; margin-left: 30px; font-weight: 700; margin-bottom: 5px;">Album</h1>
+      <div style="text-align: left; display: flex; gap: 10px;margin-left: 30px;">
+        <img *ngIf="currentMusic.albumImage" [src]="currentMusic.albumImage" alt="" width="100" height="100"
+          style="border-radius: 7px;">
+        <img *ngIf="!currentMusic.album Image" src="../assets/images/yin&yang.jpg" alt="" width="100" height="100">
+        <h2 style="padding-right: 7px; font-family: system-ui;">{{currentMusic.album}}</h2>
+      </div>
+
+    </div>
+    <h1 style="text-align: left; margin-left: 30px; margin-top: 10px; margin-bottom: 5px; font-weight: 700;">
+      Lyrics</h1>
+    <div
+      style="box-shadow: rgba(48, 44, 44, 0.74) 0px 3px 8px;width: fit-content; margin:0 20px 20px 20px; padding:10px 10px 10px 10px;">
+      <p *ngIf="currentMusic.lyrics" style="text-align: left; color: #d2d8d2;font-weight: 500; font-family: system-ui;"
+        [innerHTML]="currentMusic.lyrics">
+    </div>
+
+    <p *ngIf="!currentMusic.lyrics" style="text-align: left; padding:0 30px 30px 30px;">
+      no lyrics, first choose a song
+    </p>
+
+    <div *ngIf="tovlisteqsti || currentMusic.title == 'წვიმად გადავიქეცი'"
+      style="box-shadow: rgba(48, 44, 44, 0.74) 0px 3px 8px;width: fit-content; margin:0 20px 20px 20px; padding:10px 10px 10px 10px;">
+
+
+      <p style="text-align: left;">მახსოვს მოწყენილი თოვლის გუნადა პროფილზე გეყენა სადღაც.
+      </p>
+      <p style="text-align: left;">
+        მონაწერზე პასუხებს დაგიწერდი, მარა
+        მესიჯინგ
+        ვებსაიტის სახე არ მინდა
+        მიეცეს ამ ყვლფრს. შეიძლება Dante Alighieri-სგან მიუვიდეს მეილი ერთ(1) brwyinvale ადამიანს თუ მსხვერპლს გაიღებს
+        დანტე და inferno-დანაც თავი ექნება დაღწეული.
+        დამატებით გეტყვი რო ანიჰილაცია მეც დავგუგლე, ცხადია, სოლიდარობის თემაში და არა არცოდნის ;* (ჩემი აზრით,
+        ობლიტერაცია უფრო
+        დრასტიკულად ჟღერს) </p>
+    </div>
+    <div *ngIf="currentMusic.title == 'The Meeting Place'"
+      style="  border-radius: 20px; padding:10px 10px; width: 85%;  margin-left: 30px;
+    box-shadow: rgba(48, 44, 44, 0.74) 0px 3px 8px; margin-bottom: 10px; background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%)">
+
+
+      <p style="text-align: left;">
+        ალბათ შენც ხვდები, რომ 11 მარტს ვეღარ გამოვა ჩვენი შეხვედრა, აღარ ვიქნები აქეთ. როგორც ქრისტიანი, ცხადია,
+        ვფიქრობ,
+        რომ ადამიანები ჩვენვე ვართ
+        ჩვენი ბედის ოსტატები და ჩვენვე ვქმნით მას, შესაბამისად, არ ვფიქრობ რო ბედისწერაა შუაში ასე რომ გამოდის
+        ყველაფერი.
+        რადგანაც ჩემი მიზეზით ცდება 11 მარტი
+        შემიძლია შემოგთავაზო გადადება სხვა თარიღზე ან გადმოდება წასვლამდე, რაც მეეჭვება, ვინაიდან 14-ში დილას მივდივარ
+        და
+        იქამდე ფინალურები, ინტერვიუსთვის მომზადება, ფრენისთვის გამზადება
+        და ბევრი რამეა, თუმცა თუ გენდომება ნახევარი საათით მაინც გამოვნახავ დროს 10-ში ან 13-ში... აი თქვენ თუ კიდე ბედს
+        მიაწერთ ამ ყველაფერს, მაშინ სჯობს დაივიწყოთ შემოთავაზება
+      </p>
+
+    </div>
+  </div>
+
+</section>
+
+
+<footer style="display: flex">
+  <div style="display: flex; align-items: center; gap: 10px; width: 25%; margin-left: 25px;">
+    <img *ngIf="!currentMusic.title" src="../assets/images/yin&yang.jpg" alt="" height="60" width="60"
+      class="player-image">
+    <img *ngIf="currentMusic.title" src="{{currentMusic.image}}" alt="" height="60" width="60" class="player-image">
+    <div>
+      <p *ngIf="!currentMusic.title">Choose a song</p>
+      <p *ngIf="currentMusic.title" style="margin: 0; font-weight: bold;">{{ currentMusic.title }}</p>
+      <p *ngIf="currentMusic.title" style="margin: 0; color: grey; font-size: smaller;">{{ currentMusic.artist }}</p>
+    </div>
+
+  </div>
+
+
+  <div class="footer-div">
+    <mat-toolbar class="kka buttons">
+      <button mat-icon-button (click)="prev()" class="skip-button">
+        <mat-icon class="skip">skip_previous</mat-icon>
+      </button>
+      <button mat-icon-button (click)="play()" class="pause">
+        <mat-icon class="pause-icon">{{ audio.paused ? "play_arrow" : "pause" }}</mat-icon>
+      </button>
+      <button mat-icon-button (click)="next()" class="skip-button">
+        <mat-icon class="skip">skip_next</mat-icon>
+      </button>
+    </mat-toolbar>
+
+    <mat-toolbar class="kka music-length">
+      <span style="font-size: 12px;">{{ currentTime }}&nbsp;</span>
+      <input type="range" #myRangeInput class="slider-full" id="myRangeInput"
+        [style.background]="isHovered ? getHoverBackground() : getRangeBackground()"
+        value="{{ audio.readyState === 0 ? 0 : audio.currentTime }}" min="0" [max]="duration" step="1"
+        (input)="durationSlider($event)" (mouseout)="onMouseOut()" (mouseover)="onMouseOver()" />
+      <span style="font-size: 12px;">&nbsp;{{ musicLength }}</span>
+    </mat-toolbar>
+  </div>
+
+  <div class="volume-div">
+    <button mat-icon-button (click)="mute()">
+      <mat-icon>volume_up</mat-icon>
+    </button>
+
+
+
+    <input #volumeInput type="range" size="4" class="slider-full primary" min="0" max="1" step="0.01"
+      (input)="volumeSlider($event)" [style.background]="setBackgroundVolume()" style="width: 100px"
+      (mouseout)="onMouseOutVolume()" (mouseover)="onMouseOverVolume()" />
+  </div>
+</footer>
+
+<!-- isHoveredVolume ? '#1ed760' : 'white' -->
+
+
+
+
+<router-outlet></router-outlet>

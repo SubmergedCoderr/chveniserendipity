@@ -1,0 +1,25 @@
+<div style="background-color: rgb(27, 25, 25); text-align: center;">
+
+  <button (click)="truex()" class="button-87" style="margin: 10px;">გიორგის დახმარება</button>
+</div>
+<div class="musics" #musicsDiv>
+  <div *ngIf="show" style="text-align: center; margin: 0 auto; width: 90%;">
+    <p>შენ თუ ნერვიანობ და ვერ ირჩევ სიმღერას, გიორგი მოვა შენთან და დაგეხმარება ისე რო შენ ვერც ვერაფერს გაიგებ</p>
+
+    <button class="button-4" style="margin-right: 10px;" (click)="play()"> დამეხმალე</button>
+    <button (click)="xodamid()" class="button-4"> დამოუკიდბელი გოგო ვარ</button>
+  </div>
+
+  <div *ngIf="xodamidi" style="text-align: center; margin: 0 auto; width: 90%;">
+    <p style="margin: 0; margin-top: 20px;">ხოდა მიდი აირჩიე შენით 👄</p>
+  </div>
+  <ng-container *ngFor="let music of data.musicList; let i = index">
+    <div *ngIf="i !== 7" style="padding: 30px;">
+      <img src="{{ music.image }}" alt="" (click)="play(i)" style="cursor: pointer;">
+      <br>
+      <p>{{ music.title }}</p>
+    </div>
+  </ng-container>
+
+
+</div>

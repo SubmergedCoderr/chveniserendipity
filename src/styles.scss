@@ -1,0 +1,120 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body {
+  color: white;
+   margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+   background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+
+
+  }
+
+
+
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(73, 73, 78) black;
+    // font-family: Courier, monospace;
+    // font-weight: 400;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(73, 73, 78);
+    border-radius: 20px;
+    border: 3px solid black;
+  }
+
+
+  .player-image{
+    -webkit-transition: all .2s ease-in-out;
+  
+  }
+  
+  
+  .player-image:hover{
+    -webkit-transform: scale(1.05);
+  
+  }
+
+  //nav
+nav{
+  width: 100%;
+  height: 64px;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+}
+
+.navbar ul li {
+  list-style: none;
+  position: relative;
+  font-weight: bold;
+}
+.navbar ul{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 0;
+}
+
+.navbar ul li a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: rgb(172, 160, 160);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar ul li::after {
+  content: "";
+  height: 0.3rem;
+  width: 0;
+  background-image: linear-gradient(144deg,#5a535f, #323237 50%,#253d3e);
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+
+.modal-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+
+
+
+
+.modal-footer{
+  margin-top: 100px;
+  border-top: 0;
+  display: flex;
+  justify-content: space-between;
+}

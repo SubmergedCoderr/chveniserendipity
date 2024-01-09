@@ -1,0 +1,22 @@
+<div class="anakoko" style="padding-top: 30px ;">
+
+  <p>შაბლონური ტექსტების წერას და ათასში ერთ-ერთად ყოფნას ვამჯობინებ ვიყო ერთადერთი ათასში ხო ხვტები, ხოდა თუ გსურს რომ
+    ცოტათი ორიგინალური მოლოცვა ნახო აი ამ პატარა უსაყვარლესს დააჭირე</p>
+
+  <img src="../../assets/images/julikoko.png" alt="" width="90" height="70" (click)="milocva()" class="julikoko">
+
+  <div (mouseover)="onMouseOver()" (mouseleave)="onMouseLeave()"
+    style="width: 400px; height: 300px; margin: 0 auto; margin-bottom: 100px;" *ngIf="damenaxePls">
+    <div class="jul" [ngStyle]="{
+        'background-image': 'url(' + currentImage + ')',
+        'width': '400px',
+        'height': '300px',
+        'background-size': '100% 100%',
+        'transition': 'background-image 0.5s ease-in-out' 
+      }">
+    </div>
+  </div>
+
+
+
+</div>

@@ -1,0 +1,52 @@
+<div style="text-align: center; margin-bottom:450px; margin-top: 10px; padding: 15px;">
+
+  <div
+    style="width: 70%; margin: 30px auto 50px auto;padding: 30px; box-shadow: rgba(48, 44, 44, 0.74) 3px 3px 8px; background-color: rgba(16, 16, 16, 0.237);">
+    <p style="text-align: left; white-space: pre-wrap; "> ადგილი წესით უნდა გეცნობოდეთ, აი ამ ადგილთან ახლოს კი ჩემი
+      ინფორმაციით
+      ერთი ტყეა,
+      რომელსაც ძველი ბერძნების დედან
+      წყაროებში ემოციათა როლერკოსტერის სახელით მოიხსენიებენ. ამ ემოციათა ნიაღვარში ორი ახალგაზრდა დადიოდა დრო
+      გამოშვებით,
+      მათგან ერთ-ერთმა კი
+      მრავალი ხნის დანაპირები აასრულა და რაღაცა დამალა, მისანიშნებლად კი ჯოხი ჩაარჭო წითელი ლენტით ან თეთრით ან
+      ლურჯით(უცნაურია ან-ს რომ ვიყენებ, მაგრამ ვერ მიხვდები რაშიცაა საქმე, ნუ ერთნიშნაა
+      მიხვედრის
+      შანსები)
+    </p>
+    <br>
+    <div class="sunset-image-container">
+      <img src="../../assets/images/მზის ჩასვლა.jpg" alt="" width="400" style="border-radius: 12px;"
+        class="sunset-image">
+    </div>
+
+  </div>
+
+  <button class="btn btn-primary button-85" style="margin-bottom: 30px;" (click)="toggleSnowyImage()">
+    თოვლად გადავიქეცით
+  </button>
+  <br>
+
+  <div class="male">
+
+
+    <div class="snowy-image-container" [ngClass]="{'hide': showSnowyImage}">
+      <img src="../../assets/images/თოვლადგადავიქეცით.jpg" alt="" width="300" class="snowy-image">
+    </div>
+
+    <div class="snowy-image-container" [ngClass]="{'hide': !showSnowyImage}">
+      <img src="../../assets/images/ჩვენ.jpg" alt="" width="300" class="snowy-image">
+    </div>
+
+  </div>
+
+
+</div>
+<div class="snowflake-container">
+  <!-- Use *ngFor to create multiple snowflakes -->
+  <div *ngFor="let snowflake of snowflakes" class="snowflake" [style.top]="snowflake.top" [style.left]="snowflake.left"
+    [style.animation-duration]="snowflake.duration"></div>
+</div>
+<script>
+
+</script>

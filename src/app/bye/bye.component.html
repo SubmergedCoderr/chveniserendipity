@@ -1,0 +1,37 @@
+<div id="wrapper">
+
+  <div class="answers">
+
+
+    <h2>რატომ გავაკეთე ეს ყველაფერი ?</h2>
+    <p style="text-align: left;">ცხადია, ადრე რომ დავიწყე კეთება რაღაც გრძნობაც მამოძრავებდა და მაძლევდა მოტივაციას,
+      თანაც დენდროლოგიურში ნათქვამის გამო
+      მსურდა გენახა რო შენ გამო ნებისმიერ რამეს უანგაროდ გავაკეთებდი და არაფერს დავიზარებდი. როგორც მოგახსენე
+      დანებებულიც მქონდა და აღარც
+      ვაგრძელებდი და რატომ გადავწყვიტე დასრულება მაგას ახლა გეტყვი. რასაკვირველია, იმდროინდელივით გრძნობები აღარ
+      მამოძრავებდა(kinda), უბრალოდ მსურდა
+      დაწყებული საქმე შუა გზაზე არ მიმეტოვებინა და თანაც თუ ოდნავ მაინც მოგგვრიდა ბედნიერებასა და სიხარულს ვიფიქრე
+      რატომაც არა, დავამთავრებ-მეთქი. ძველი ტექსტები, სიმღერები და ნუ ყველაფერი შევუნარჩუნე საიტს სრულიად გულწრფელი რომ
+      ვყოფილიყავ შენ მიმართ.
+      <br>
+      <br>
+      იგი გადის.
+    </p>
+
+  </div>
+
+  <form id="paper" method="get" action="" #contactForm="ngForm" style="margin-bottom: 30px;">
+    <p>გაუშვი ცის ლაჟვარდებზე შენი ფიქრები</p>
+    <textarea placeholder="ჰმმ..." type="text" id="fullName" name="fullName" [(ngModel)]="cislajvardebistvis" required
+      id="text" name="text" rows="4"
+      style="overflow-y: auto; word-wrap: break-word; resize: none; height: 160px; "></textarea>
+    <br>
+
+    <img (click)="sendMail()" src="../../assets/images/clouds.png" alt="" width="100" height="70" class="player-image"
+      style="cursor: pointer;">
+
+  </form>
+
+
+
+</div>

@@ -1,0 +1,24 @@
+.anakoko{
+  width: 90%;
+  // height: 50px;
+  // background-color: white;
+  margin: 0 auto;
+  text-align: center;
+
+}
+.julikoko {
+  -webkit-transition: all .2s ease-in-out;
+  margin-bottom: 20px;
+
+}
+
+.julikoko:hover{
+  -webkit-transform: scale(1.05);
+  cursor: pointer;
+}
+
+.jul{
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+

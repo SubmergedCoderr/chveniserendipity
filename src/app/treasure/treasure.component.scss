@@ -1,0 +1,148 @@
+
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.723);
+  font-weight: bold;
+  background: #63ace5; /* Winter blue background */
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+  45deg,
+  #ffffff, /* Snow white */
+  #d0e3f4, /* Light blue snow */
+  #ffffff, /* Snow white */
+  #d0e3f4, /* Light blue snow */
+  #ffffff, /* Snow white */
+  #b3d9f2, /* Lighter blue snow */
+  #ffffff, /* Snow white */
+  #a5c8e3  /* Even lighter blue snow */
+);
+
+
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* Snow white */
+  background-image: linear-gradient(144deg, #b3e0ff, #a5c8e3 50%, #ffffff);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+
+/* app-treasure.component.css */
+
+/* Add a container for the snowflakes */
+.snowflake-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Hide overflow */
+  pointer-events: none; /* Allow clicks to pass through */
+}
+.snowflake {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #fff; /* Snowflake color */
+  border-radius: 50%;
+  animation: fallingSnow linear infinite;
+  opacity: 0; /* Start with zero opacity */
+}
+
+@keyframes fallingSnow {
+  0% {
+    transform: translateY(-100vh) translateX(0);
+    opacity: 0; 
+  }
+  50% {
+    opacity: 1; 
+  }
+  100% {
+    transform: translateY(100vh) translateX(0);
+    opacity: 0; 
+  }
+}
+
+
+
+.sunset-image-container {
+  display: inline-block;
+  position: relative;
+}
+
+.sunset-image {
+  box-shadow: 0 5px 10px rgba(255, 68, 0, 0.244); /* Adjust the color and intensity as needed */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.sunset-image-container:hover .sunset-image {
+  box-shadow: 0 5px 10px rgba(255, 68, 0, 0.489); /* Adjust the color and intensity for the hover effect */
+}
+
+
+
+.snowy-image-container {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.snowy-image {
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.8), 0 4px 8px rgba(0, 0, 0, 0.4), 0 -6px 12px rgba(173, 216, 230, 0.6);
+  /* Adjust the colors, intensity, and positions as needed */
+}
+
+.snowy-image-container.hide {
+  opacity: 0;
+}
+
+
+.male{
+  position: relative;
+}

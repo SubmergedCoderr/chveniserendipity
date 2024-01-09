@@ -1,0 +1,3 @@
+<div *ngFor="let music of musicList; let i = index">
+  <a (click)="play(i)" style="cursor: pointer">{{ music.title }}</a>
+</div>
