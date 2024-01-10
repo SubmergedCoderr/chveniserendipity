@@ -34,9 +34,11 @@ export class AppComponent implements OnInit {
   showGandzi :  boolean = true;
   dawyebulia :  boolean = false;
 
+  manaxechemipoema: boolean = false;
+
   @ViewChild('volumeInput') volumeInput: any;
   
-
+  
 
   onMouseOver(): void {
     this.isHovered = true;
@@ -289,9 +291,9 @@ export class AppComponent implements OnInit {
       image: "/assets/images/albums/amalbum.jpg",
       coverImage: "/assets/images/am/onlyonee.jpg",
       albumImage: "/assets/images/albums/amalbum.jpg",
-      gradient: 'linear-gradient(112deg, rgb(117, 5, 5) 10%, rgb(94 94 12) 74%)',
+      gradient: 'linear-gradient(112deg, rgb(107 25 25) 10%, rgb(189 189 0) 140%)',
       lyrics: "Lady, where has your love gone? <br> I was looking but can't find it anywhere <br>They always offer when there's <br> Loads of love around ",
-      elaboration: "საუკეთესო ლუკმა ბოლოში უნდა მოიტოვოო, ხოდა ბოლოს ვყრი არქთიქებს. ამ სიმღერას რაც შეეხება გეტყვი რო 24-ში ერთი არ ყოფილხარ, რაღაც სპეტაკი და წმინდა იყო შენში, სულ გეუბნებოდი კიდეც და გთხოვ არავის მისცე უფლება რომ ეგ დაგიკარგოს"
+      elaboration: "საუკეთესო ლუკმა ბოლოში უნდა მოიტოვოო, ხოდა ბოლოს ვყრი არქთიქებს. ამ სიმღერას რაც შეეხება გეტყვი რო 24-ში ერთი არასდროს ყოფილხარ ჩემთვის, რაღაც სპეტაკი და წმინდა იყო შენში, სულ გეუბნებოდი კიდეც და გთხოვ არავის მისცე უფლება რომ ეგ დაგიკარგოს"
     },
 
     {
