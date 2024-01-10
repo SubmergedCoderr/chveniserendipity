@@ -220,7 +220,8 @@ export class AppComponent implements OnInit {
       coverImage: "/assets/images/iffff.jpg",
       albumImage: "/assets/images/tmp.jpg",
       gradient: 'linear-gradient(147deg, #000000  0%, #4d4855 74%)',
-      lyrics: "The colder the night gets, the further she strays <br> And he doesn't like it being this way <br> And she tried so hard to steer away from the meeting place <br> But her heart had led her there"
+      lyrics: "The colder the night gets, the further she strays <br> And he doesn't like it being this way <br> And she tried so hard to steer away from the meeting place <br> But her heart had led her there",
+      elaboration: "ალბათ შენც ხვდები, რომ 11 მარტს ვეღარ გამოვა ჩვენი შეხვედრა, აღარ ვიქნები აქეთ. როგორც ქრისტიანი, ცხადია, ვფიქრობ, რომ ადამიანები ჩვენვე ვართ ჩვენი ბედის ოსტატები და ჩვენვე ვქმნით მას, შესაბამისად, არ ვფიქრობ რო ბედისწერაა შუაში ასე რომ გამოდის ყველაფერი. რადგანაც ჩემი მიზეზით ცდება 11 მარტი შემიძლია შემოგთავაზო გადადება სხვა თარიღზე ან გადმოდება წასვლამდე, რაც მეეჭვება, ვინაიდან 14-ში დილას მივდივარ და იქამდე ფინალურები, ინტერვიუსთვის მომზადება, ფრენისთვის გამზადება და ბევრი რამეა, თუმცა თუ გენდომება ნახევარი საათით მაინც გამოვნახავ დროს 10-ში ან 13-ში... აი თქვენ თუ კიდე ბედს მიაწერთ ამ ყველაფერს, მაშინ სჯობს დაივიწყოთ შემოთავაზება"
     },
 
     {
@@ -270,7 +271,8 @@ export class AppComponent implements OnInit {
       coverImage: "/assets/images/tovlis_gunda.png",
       albumImage: "/assets/images/albums/tovlis_gunda_album.png",
       gradient: 'linear-gradient(112deg, rgb(139 139 139) 10%, rgb(46 46 44) 74%)',
-      lyrics: "თოვლი ვიყავ ქათქათა <br> ციდან გამოვიქეცი <br> ვერ მიცანი ? კაპ კაპ კაპ კაპ <br> წვიმად გადავიქეცი <br> გუდა გუდა თეთრი გუდა <br> ხან წვიმა ვარ ხანაც გუნდა"
+      lyrics: "თოვლი ვიყავ ქათქათა <br> ციდან გამოვიქეცი <br> ვერ მიცანი ? კაპ კაპ კაპ კაპ <br> წვიმად გადავიქეცი <br> გუდა გუდა თეთრი გუდა <br> ხან წვიმა ვარ ხანაც გუნდა",
+      elaboration: "მახსოვს მოწყენილი თოვლის გუნადა პროფილზე გეყენა სადღაც. მონაწერზე პასუხებს დაგიწერდი, მარა მესიჯინგ ვებსაიტის სახე არ მინდა მიეცეს ამ ყვლფრს. შეიძლება Dante Alighieri-სგან მიუვიდეს მეილი ერთ(1) brwyinvale ადამიანს თუ მსხვერპლს გაიღებს დანტე და inferno-დანაც თავი ექნება დაღწეული. დამატებით გეტყვი რო ანიჰილაცია მეც დავგუგლე, ცხადია, სოლიდარობის თემაში და არა არცოდნის ;* (ჩემი აზრით, ობლიტერაცია უფრო დრასტიკულად ჟღერს)"
     },
 
     {

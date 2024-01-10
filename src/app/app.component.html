@@ -23,12 +23,11 @@
 
       <br>
       <br>
-      <div *ngIf="manaxechemipoema"
-        style="  border-radius: 20px;
-      box-shadow: rgba(48, 44, 44, 0.74) 0px 3px 8px; padding: 15px; margin-bottom: 10px; background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%); text-align: center;">
+      <div *ngIf="manaxechemipoema" style="  border-radius: 20px;
+      box-shadow: rgba(48, 44, 44, 0.74) 0px 3px 8px; padding: 15px; margin-bottom: 10px;  text-align: left;">
 
 
-        <p style="white-space: pre-wrap; text-align: left;">
+        <p style="white-space: pre-wrap; text-align: left;color: #899b9b;font-family: ui-monospace; font-weight: 600;">
           2023 წლის ერთ-ერთი ღამეა და შენზე დავფიქრდი, გამახსენდა განუსაზღვრელ(არ მინდა ვთქვა როდის დავფიქრდი შენზე და
           როდის დავიწყე ამის კეთება) თვეში შენი დაბადების დღე როა და მე უბრალოდ ფიზიკურად არ მომეცა
           შანსი რამე მეჩუქა შენთვის რომელიმე დაბადების დღეზე, პირველს თუ არ ჩავთვლით, რომელზეც გაჩუქე საათი, რომელსაც
@@ -77,8 +76,9 @@
           გახსოვს
           მხარეებზე უნარების ამოცანა ვინ აგისხნა :*
         </p>
-        <img *ngIf="show" src="../assets/images/sidess.png" alt="" width="450" height="250"
-          style="border-radius: 10px;">
+        <br>
+        <img *ngIf="show" src="../assets/images/sidess.png" alt="" width="450" height="250" style="border-radius: 10px;    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+          filter: grayscale(30%);">
       </div>
 
     </div>
@@ -157,53 +157,17 @@
     </div>
 
 
-    <div *ngIf="tovlisteqsti || currentMusic.title == 'წვიმად გადავიქეცი'"
-      style="box-shadow: rgba(48, 44, 44, 0.74) 0px 3px 8px;width: fit-content; margin:0 20px 20px 20px; padding:10px 10px 10px 10px;">
-
-
-      <p style="text-align: left;">მახსოვს მოწყენილი თოვლის გუნადა პროფილზე გეყენა სადღაც.
-      </p>
-      <p style="text-align: left;">
-        მონაწერზე პასუხებს დაგიწერდი, მარა
-        მესიჯინგ
-        ვებსაიტის სახე არ მინდა
-        მიეცეს ამ ყვლფრს. შეიძლება Dante Alighieri-სგან მიუვიდეს მეილი ერთ(1) brwyinvale ადამიანს თუ მსხვერპლს გაიღებს
-        დანტე და inferno-დანაც თავი ექნება დაღწეული.
-        დამატებით გეტყვი რო ანიჰილაცია მეც დავგუგლე, ცხადია, სოლიდარობის თემაში და არა არცოდნის ;* (ჩემი აზრით,
-        ობლიტერაცია უფრო
-        დრასტიკულად ჟღერს) </p>
-    </div>
-
+    <h1 *ngIf="currentMusic.elaboration"
+      style="text-align: left; margin-left: 30px; margin-top: 10px; margin-bottom: 5px; font-weight: 700;">
+      Elaboration</h1>
     <div *ngIf="currentMusic.elaboration"
-      style="box-shadow: rgba(48, 44, 44, 0.74) 0px 3px 8px;width: fit-content; margin:0 20px 20px 20px; padding:10px 10px 5px 10px;">
+      style="box-shadow: rgba(48, 44, 44, 0.74) 0px 3px 8px;width: fit-content; margin:0 20px 20px 20px; padding:10px  10px;">
 
 
-      <p style="text-align: left; font-family: system-ui; font-weight: 500; font-size: 12px;">
+      <p style="text-align: left; font-family: system-ui; font-weight: 500; font-size: 12px; margin: 0;">
         {{currentMusic.elaboration}}</p>
 
     </div>
-
-    <div *ngIf="currentMusic.title == 'The Meeting Place'"
-      style="  border-radius: 20px; padding:10px 10px; width: 85%;  margin-left: 30px;
-    box-shadow: rgba(48, 44, 44, 0.74) 0px 3px 8px; margin-bottom: 10px; background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%)">
-
-
-      <p style="text-align: left;">
-        ალბათ შენც ხვდები, რომ 11 მარტს ვეღარ გამოვა ჩვენი შეხვედრა, აღარ ვიქნები აქეთ. როგორც ქრისტიანი, ცხადია,
-        ვფიქრობ,
-        რომ ადამიანები ჩვენვე ვართ
-        ჩვენი ბედის ოსტატები და ჩვენვე ვქმნით მას, შესაბამისად, არ ვფიქრობ რო ბედისწერაა შუაში ასე რომ გამოდის
-        ყველაფერი.
-        რადგანაც ჩემი მიზეზით ცდება 11 მარტი
-        შემიძლია შემოგთავაზო გადადება სხვა თარიღზე ან გადმოდება წასვლამდე, რაც მეეჭვება, ვინაიდან 14-ში დილას მივდივარ
-        და
-        იქამდე ფინალურები, ინტერვიუსთვის მომზადება, ფრენისთვის გამზადება
-        და ბევრი რამეა, თუმცა თუ გენდომება ნახევარი საათით მაინც გამოვნახავ დროს 10-ში ან 13-ში... აი თქვენ თუ კიდე ბედს
-        მიაწერთ ამ ყველაფერს, მაშინ სჯობს დაივიწყოთ შემოთავაზება
-      </p>
-
-    </div>
-
 
 
   </div>
