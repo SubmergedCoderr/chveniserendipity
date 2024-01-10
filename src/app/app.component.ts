@@ -291,7 +291,7 @@ export class AppComponent implements OnInit {
       albumImage: "/assets/images/albums/amalbum.jpg",
       gradient: 'linear-gradient(112deg, rgb(117, 5, 5) 10%, rgb(94 94 12) 74%)',
       lyrics: "Lady, where has your love gone? <br> I was looking but can't find it anywhere <br>They always offer when there's <br> Loads of love around ",
-      elaboration: "საუკეთესო ლუკმა ბოლოში უნდა მოიტოვოო, ხოდა ბოლოს ვყრი არქთიქებს. ამ სიმღერას რაც შეეხება გეტყვი რო 24-ში ერთი არ ყოფილხარ, ერთადერთი იყავი 100-ში, რაღაც სპეტაკი და წმინდა იყო შენში, სულ გეუბნებოდი კიდეც და გთხოვ არავის მისცე უფლება რომ ეგ დაგიკარგოს"
+      elaboration: "საუკეთესო ლუკმა ბოლოში უნდა მოიტოვოო, ხოდა ბოლოს ვყრი არქთიქებს. ამ სიმღერას რაც შეეხება გეტყვი რო 24-ში ერთი არ ყოფილხარ, რაღაც სპეტაკი და წმინდა იყო შენში, სულ გეუბნებოდი კიდეც და გთხოვ არავის მისცე უფლება რომ ეგ დაგიკარგოს"
     },
 
     {
