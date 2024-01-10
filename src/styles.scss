@@ -137,3 +137,37 @@ body {
   top: 0;
   border-radius: 10px;
 }
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  background-color: black !important;
+  // background-color: blue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  height: 100px;
+}
+
+
+.kka{
+  color: #b3b3b3;
+  width: auto;
+  background-color: black;
+}
+
+.kka button:hover{
+  color: white;
+}
+
+.footer-div{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
