@@ -38,8 +38,10 @@ export class AppComponent implements OnInit {
 
   @ViewChild('volumeInput') volumeInput: any;
   
-  
 
+  showPoema() : void{
+    this.manaxechemipoema = !this.manaxechemipoema;
+  }
   onMouseOver(): void {
     this.isHovered = true;
   }

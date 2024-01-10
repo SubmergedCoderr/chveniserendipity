@@ -12,15 +12,18 @@
 
     <div *ngIf="showMusicsComponent && showBye && showGandzi" class="main" style="padding: 15px;">
       <!-- <app-musics [musicList]="musicList" (musicIndex)="play($event)"></app-musics> -->
-      <div style="text-align: center; margin-bottom:5px; margin-top: 30px;">
-        <button class="btn btn-primary button-85" (click)="openDialog()">
+      <div style="text-align: center; margin-bottom:5px; margin-top: 30px; ">
+        <button class="btn btn-primary button-85" (click)="openDialog()" style="margin-right: 10px;">
           არიჩიე სიმღერა
+        </button>
+        <button class="btn btn-primary button-85" *ngIf="show" (click)="showPoema()">
+          გიორგის პოემა
         </button>
       </div>
 
       <br>
       <br>
-      <div *ngIf="show"
+      <div *ngIf="manaxechemipoema"
         style="  border-radius: 20px;
       box-shadow: rgba(48, 44, 44, 0.74) 0px 3px 8px; padding: 15px; margin-bottom: 10px; background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%); text-align: center;">
 
