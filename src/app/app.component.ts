@@ -239,7 +239,7 @@ export class AppComponent implements OnInit {
       image: "/assets/images/sw.jpeg",
       coverImage: "/assets/images/swcover.png",
       albumImage: "/assets/images/sw.jpeg",
-      gradient: 'linear-gradient(115deg, rgb(9, 20, 26) 0%, rgb(24 35 53) 74%);',
+      gradient: 'linear-gradient(115deg, rgb(9, 20, 26) 0%, rgb(24 35 53) 74%)',
       lyrics: "She'll take you back, don't make believe <br> You wanna think it through <br> I've loved before, I'll love again <br> I know that yours was true "
     },
 
@@ -252,7 +252,9 @@ export class AppComponent implements OnInit {
       coverImage: "/assets/images/SaidYoungMan.jpeg",
       albumImage: "/assets/images/tear.jpg",
       gradient: 'linear-gradient(112deg, rgb(30 26 8) 10%, rgb(7 7 3) 74%)',
-      lyrics: "When routine bites hard <br> And ambitions are low <br> And resentment rides high <br> But emotions won't grow"
+      lyrics: "When routine bites hard <br> And ambitions are low <br> And resentment rides high <br> But emotions won't grow",
+      elaboration: 'Normal people-ის საუნდრეკს ვუსმენდი ადრე სპოტიფაიზე და როგორც მითხარი მაქედან დაიწყე ყურება, მე მერე გაწყვეტილი მქონდა რამდენიმე დღე და მაგ პერიოდში შენი დისქორდის ბაიოში რენდომად ამოვიკითხე Sad Young Man in a Train, დავსერჩე, ნახატს შევხედე მეთქი რად დადო ვფიქრობდი, რაღაც იდუმალი იყო და მომეწონა, მერე გავაგრძელე რამდენიმე დღეში ისევ სერიალის ყურება და მერვე სერიის შუაში ეგ ნახატი ახსენეს მეთქი ვახ ხო არ მომეჩვენა რამდენჯერმე გადავახვიე, სერიის ბოლოს კი ჩაირთო ეს სიმღერა, მაგრად მომეწონა და ბოლო სცენა ამ ნახატით დაგვრიგვიდნა, ხოდა რავი შოკში ვიყავი მეთქი რა ხდება, მაგის მერე კი ეს სიმღერა, ნახატი და რავი ის სერიაც მაგრად მევასება რა(ესენი წესით მოყოლილი უნდა მქონდეს, მარა მაინც შეგახსენე უფრო დეტალურად და ამ სიმღერის ატვირტვისგან გამოწვეულ ეჭვებიც წესით ჩავახშე)'
+      
     },
 
     {
@@ -277,7 +279,57 @@ export class AppComponent implements OnInit {
       albumImage: "/assets/images/albums/ever.jpg",
       gradient: 'linear-gradient(112deg, rgb(139 139 139) 10%, rgb(46 46 44) 74%)',
       lyrics: "Locked in a stalemate <br> With a man who bars no holds <br> Rock and a hard place <br> He's battering control "
-    }
+    },
+
+    {
+      album: "Who The F*** Are Arctic Monkeys?",
+      title: "No Buses",
+      artist: "Arctic Monkeys",
+      url: "/assets/No Buses.mp3",
+      image: "/assets/images/albums/amalbum.jpg",
+      coverImage: "/assets/images/am/onlyonee.jpg",
+      albumImage: "/assets/images/albums/amalbum.jpg",
+      gradient: 'linear-gradient(112deg, rgb(117, 5, 5) 10%, rgb(94 94 12) 74%)',
+      lyrics: "Lady, where has your love gone? <br> I was looking but can't find it anywhere <br>They always offer when there's <br> Loads of love around ",
+      elaboration: "საუკეთესო ლუკმა ბოლოში უნდა მოიტოვოო, ხოდა ბოლოს ვყრი არქთიქებს. ამ სიმღერას რაც შეეხება გეტყვი რო 24-ში ერთი არ ყოფილხარ, ერთადერთი იყავი 100-ში, რაღაც სპეტაკი და წმინდა იყო შენში, სულ გეუბნებოდი კიდეც და გთხოვ არავის მისცე უფლება რომ ეგ დაგიკარგოს"
+    },
+
+    {
+      album: "One For The Road",
+      title: "You Are So Dark",
+      artist: "Arctic Monkeys",
+      url: "/assets/sodark.mp3",
+      image: "/assets/images/am/sodark.jpg",
+      coverImage: "/assets/images/am/sosodark.jpg",
+      albumImage: "/assets/images/am/sodark.jpg",
+      gradient: 'linear-gradient(112deg, rgb(0 0 0) 10%, rgb(25 25 18) 74%)',
+      lyrics: "You got your H.P. Lovecraft <br> Your Edgar Allan Poe <br> You got your unkind of ravens<br> And your murder of crows "
+    },
+
+    {
+      album: "Humbug",
+      title: "Cornerstone",
+      artist: "Arctic Monkeys",
+      url: "/assets/cornerstone.mp3",
+      image: "/assets/images/albums/cornerstone.jpg",
+      coverImage: "/assets/images/am/alexi.jpg",
+      albumImage: "/assets/images/albums/cornerstone.jpg",
+      gradient: 'linear-gradient(112deg, rgb(182 209 216) 10%, rgb(79 79 75) 74%)',
+      lyrics: "I thought I saw you in the Battleship <br> But it was only a look alike <br> She was nothing but a vision trick <br> Under the warning light "
+    },
+    {
+      album: "The Great Pretenders",
+      title: "Vertigo",
+      artist: "Mini Mansions, Alex Turner",
+      url: "/assets/vertigo.mp3",
+      image: "/assets/images/albums/mm.jpg",
+      coverImage: "/assets/images/albums/mmcover.jpg",
+      albumImage: "/assets/images/albums/mm.jpg",
+      gradient: 'linear-gradient(112deg, rgb(122 69 8) 10%, rgb(0 0 0) 74%)',
+      lyrics: "Oh, you know me from all my videos <br> Isn't it time we hit the road? <br> Oh, you want me, that's all you need to know <br> Wish you were mine, I got to go",
+      elaboration: "ქართული სიმღერა როა ტექნომაგია, ყველამ რო აიტაცა და უსმენს, ნახე აბა მათი ქავერის ფოტო, ვერტიგოსას ხომ არ ჰგავს ? ჰგავს კი არა იდენტურია, ეს აღმოჩენა რო გავაკეთე მეთქი რანაირად, სიდან სადაო ამაზეა ნათქვამი"
+    },
+
 
 
 

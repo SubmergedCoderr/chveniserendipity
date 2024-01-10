@@ -9,4 +9,5 @@ export interface Music {
   albumImage: string;
   gradient: string;
   lyrics: string;
+  elaboration?: string;
 }

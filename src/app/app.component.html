@@ -116,14 +116,16 @@
       [src]="currentMusic.coverImage" alt="" class="coverImage">
     <img *ngIf="(currentMusic.coverImage && tovlisGunda) || currentMusic.title == 'წვიმად გადავიქეცი'"
       [src]="currentMusic.coverImage" alt="" class="coverImage" style="box-shadow: none;">
-    <img *ngIf="!currentMusic.coverImage" src="../assets/images/yin&yang.jpg" alt="" class="coverImage">
+    <img *ngIf="!currentMusic.coverImage" src="../assets/images/noimage/no5.png" style="box-shadow: none;" alt=""
+      class="coverImage">
 
     <div style="margin-bottom: 15px;">
       <h1 style="text-align: left; margin-left: 30px; font-weight: 700; margin-bottom: 5px;">Album</h1>
       <div style="text-align: left; display: flex; gap: 10px;margin-left: 30px;">
         <img *ngIf="currentMusic.albumImage" [src]="currentMusic.albumImage" alt="" width="100" height="100"
           style="border-radius: 7px;">
-        <img *ngIf="!currentMusic.album Image" src="../assets/images/yin&yang.jpg" alt="" width="100" height="100">
+        <img *ngIf="!currentMusic.album Image" src="../assets/images/noimage/no5.png" style="box-shadow: none;" alt=""
+          width="100" height="100">
         <h2 style="padding-right: 7px; font-family: system-ui;">{{currentMusic.album}}</h2>
       </div>
 
@@ -136,18 +138,8 @@
         style="text-align: left; color: #d2d8d2;font-weight: 500; font-family: system-ui; margin: 0;"
         [innerHTML]="currentMusic.lyrics">
 
-      <p *ngIf="currentMusic.lyrics && currentMusic.title == 'Love Will Tear Us Apart'"
-        style="text-align: left; color: #d2d8d2;font-weight: 500; font-family: system-ui; margin: 15px 0 0 0;">
-        Normal people-ის საუნდრეკს ვუსმენდი ადრე სპოტიფაიზე და როგორც მითხარი მაქედან დაიწყე ყურება, მე მერე გაწყვეტილი
-        მქონდა
-        რამდენიმე დღე და მაგ პერიოდში შენი დისქორდის ბაიოში რენდომად ამოვიკითხე Sad Young Man in a Train, დავსერჩე,
-        ნახატს შევხედე მეთქი რად
-        დადო ვფიქრობდი, რაღაც იდუმალი იყო და მომეწონა, მერე გავაგრძელე რამდენიმე დღეში ისევ სერიალის ყურება და
-        მერვე სერიის შუაში ეგ ნახატი ახსენეს მეთქი ვახ ხო არ მომეჩვენა რამდენჯერმე გადავახვიე, სერიის ბოლოს კი ჩაირთო
-        ეს სიმღერა, მაგრად მომეწონა და ბოლო სცენა ამ ნახატით დაგვრიგვიდნა, ხოდა რავი შოკში ვიყავი მეთქი რა ხდება, მაგის
-        მერე კი ეს სიმღერა, ნახატი და რავი ის სერიაც
-        მაგრად მევასება რა(ესენი წესით მოყოლილი უნდა მქონდეს, მარა მაინც შეგახსენე უფრო დეტალურად და ამ
-        სიმღერის ატვირტვისგან გამოწვეულ ეჭვებიც წესით ჩავახშე)
+      <p *ngIf="!currentMusic.lyrics" style="margin: 0;">
+        no lyrics, first choose a song
       </p>
 
       <p *ngIf="currentMusic.lyrics && currentMusic.title == 'Evergreen'"
@@ -161,9 +153,6 @@
 
     </div>
 
-    <p *ngIf="!currentMusic.lyrics" style="text-align: left; padding:0 30px 30px 30px;">
-      no lyrics, first choose a song
-    </p>
 
     <div *ngIf="tovlisteqsti || currentMusic.title == 'წვიმად გადავიქეცი'"
       style="box-shadow: rgba(48, 44, 44, 0.74) 0px 3px 8px;width: fit-content; margin:0 20px 20px 20px; padding:10px 10px 10px 10px;">
@@ -181,6 +170,16 @@
         ობლიტერაცია უფრო
         დრასტიკულად ჟღერს) </p>
     </div>
+
+    <div *ngIf="currentMusic.elaboration"
+      style="box-shadow: rgba(48, 44, 44, 0.74) 0px 3px 8px;width: fit-content; margin:0 20px 20px 20px; padding:10px 10px 5px 10px;">
+
+
+      <p style="text-align: left; font-family: system-ui; font-weight: 500; font-size: 12px;">
+        {{currentMusic.elaboration}}</p>
+
+    </div>
+
     <div *ngIf="currentMusic.title == 'The Meeting Place'"
       style="  border-radius: 20px; padding:10px 10px; width: 85%;  margin-left: 30px;
     box-shadow: rgba(48, 44, 44, 0.74) 0px 3px 8px; margin-bottom: 10px; background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%)">
@@ -211,7 +210,8 @@
 
 <footer style="display: flex">
   <div style="display: flex; align-items: center; gap: 10px; width: 25%; margin-left: 25px;">
-    <img *ngIf="!currentMusic.title" src="../assets/images/yin&yang.jpg" alt="" height="60" width="60"
+    <img *ngIf="!currentMusic.title" src="../assets/images/noimage/no5.png"
+      style="box-shadow: none; background-color: #939495; border-radius: 12px;" alt="" height="60" width="60"
       class="player-image">
     <img *ngIf="currentMusic.title" src="{{currentMusic.image}}" alt="" height="60" width="60" class="player-image">
     <div>

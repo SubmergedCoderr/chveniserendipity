@@ -15,7 +15,7 @@
   </div>
   <ng-container *ngFor="let music of data.musicList; let i = index">
     <div *ngIf="i !== 7" style="padding: 30px;">
-      <img src="{{ music.image }}" alt="" (click)="play(i)" style="cursor: pointer;">
+      <img src="{{ music.image }}" alt="" (click)="play(i)" style="cursor: pointer; margin-bottom: 7px;">
       <br>
       <p>{{ music.title }}</p>
     </div>
