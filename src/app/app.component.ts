@@ -152,7 +152,8 @@ export class AppComponent implements OnInit {
         
         if(!this.tovlisGunda && !this.modalardamanaxo){
 
-          this.openModal();
+          this.play(7);
+          this.gamomichine = true;
         }
         
       }
@@ -187,8 +188,7 @@ export class AppComponent implements OnInit {
   }
   gamomichine : boolean = false;
   dismissModal() {
-    this.play(7);
-    this.gamomichine = true;
+
   }
   musicList: Music[] = [
     {
