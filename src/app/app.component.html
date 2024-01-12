@@ -185,7 +185,7 @@
     <div
       style="box-shadow: rgba(48, 44, 44, 0.74) 0px 3px 8px;width: fit-content; margin:0 20px 20px 20px; padding:10px 10px 10px 10px;">
       <p *ngIf="currentMusic.lyrics"
-        style="text-align: left; color: #d2d8d2;font-weight: 500; font-family: system-ui; margin: 0;"
+        style="text-align: left; color: #d2d8d2;font-weight: 500; font-family: system-ui; margin: 0; word-break: break-all;"
         [innerHTML]="currentMusic.lyrics">
 
       <p *ngIf="!currentMusic.lyrics" style="margin: 0;">
