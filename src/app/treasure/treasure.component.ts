@@ -18,6 +18,9 @@ export class TreasureComponent {
   snowflakes: any[] = [];
   
   public showSnowyImage = true;
+  public weather : string = "გაწვიმდებოდეს";
+
+  quantity : number = 100;
 
   toggleSnowyImage() {
     this.showSnowyImage = !this.showSnowyImage;
@@ -29,8 +32,9 @@ export class TreasureComponent {
     this.generateSnowflakes();
   }
 
+  
   generateSnowflakes() {
-    const numSnowflakes = Math.floor(Math.random() * 30) + 30;
+    const numSnowflakes = Math.floor(Math.random() * 100) + 100;
 
     for (let i = 0; i < numSnowflakes; i++) {
       this.snowflakes.push({
@@ -40,6 +44,15 @@ export class TreasureComponent {
       });
     }
   }
+
+
+  // changeWeather(weather: string){
+  //   if (weather == "გაწვიმდებოდეს"){
+  //     this.weather = "გათოვდებოდეს";
+  //   }else{
+  //     this.weather = "გაწვიმდებოდეს";
+  //   }
+  // }
 
 
 

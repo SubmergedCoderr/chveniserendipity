@@ -68,7 +68,32 @@
   top: 0;
   border-radius: 10px;
 }
+.btn{
+  font-weight: 500;
+  
+}
 
+.snow{
+  color: rgba(255, 255, 255, 0.723);
+  background: #63ace5; /* Winter blue background */
+  height: 40px;
+  border: none;
+}
+
+.snow:hover{
+  background: #74b0de; 
+}
+
+.rain{
+  color: rgba(255, 255, 255, 0.723);
+  background: #124063;
+  border: none;
+  height: 40px;
+}
+
+.rain:hover{
+  background: #124063;
+}
 
 /* app-treasure.component.css */
 
@@ -84,12 +109,21 @@
 }
 .snowflake {
   position: absolute;
-  width: 10px;
-  height: 10px;
-  background-color: #fff; /* Snowflake color */
   border-radius: 50%;
   animation: fallingSnow linear infinite;
   opacity: 0; /* Start with zero opacity */
+}
+
+.rainflake{
+  width: 4px;
+  height: 4px;
+  background-color: #2a6389; /* Snowflake color */
+}
+
+.snowsnow{
+  width: 7px;
+  height: 7px;
+  background-color: #adb8be; /* Snowflake color */
 }
 
 @keyframes fallingSnow {

@@ -1,6 +1,6 @@
 .musics{
   display: flex;
-  width: 750px;
+  width: 733px;
   flex-wrap: wrap;
   height: 400px;
   overflow-y: auto;
@@ -19,7 +19,7 @@ img{
 
 .button-87 {
 
-  padding: 15px 30px;
+  padding: 15px 23px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
@@ -54,7 +54,7 @@ img {
 }
 
 img:hover {
-  -webkit-transform: scale(1.25);
+  -webkit-transform: scale(1.1);
 }
 
 // a:hover{

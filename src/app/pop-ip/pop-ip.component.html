@@ -1,6 +1,6 @@
 <div style="background-color: rgb(27, 25, 25); text-align: center;">
 
-  <button (click)="truex()" class="button-87" style="margin: 10px;">გიორგის დახმარება</button>
+  <button (click)="truex()" class="button-87" style="margin: 10px; margin-top: 15px;">გიორგის დახმარება</button>
 </div>
 <div class="musics" #musicsDiv>
   <div *ngIf="show" style="text-align: center; margin: 0 auto; width: 90%;">
@@ -14,8 +14,8 @@
     <p style="margin: 0; margin-top: 20px;">ხოდა მიდი აირჩიე შენით 👄</p>
   </div>
   <ng-container *ngFor="let music of data.musicList; let i = index">
-    <div *ngIf="i !== 7" style="padding: 30px;">
-      <img src="{{ music.image }}" alt="" (click)="play(i)" style="cursor: pointer; margin-bottom: 7px;">
+    <div *ngIf="i !== 7 && i !== 13 && i !== 14" style="padding: 30px;">
+      <img src="{{ music.image }}" alt="" (click)="play(i)" style="cursor: pointer; margin-bottom: 8px;">
       <br>
       <p>{{ music.title }}</p>
     </div>

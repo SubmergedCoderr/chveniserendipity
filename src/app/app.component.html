@@ -10,10 +10,11 @@
       </ul>
     </nav>
 
-    <div *ngIf="showMusicsComponent && showBye && showGandzi" class="main" style="padding: 15px;">
+    <div *ngIf="showMusicsComponent && showBye && showGandzi" class="main" style="padding: 15px; padding-bottom: 20px;">
       <!-- <app-musics [musicList]="musicList" (musicIndex)="play($event)"></app-musics> -->
-      <div style="text-align: center; margin-bottom:5px; margin-top: 30px; ">
-        <button class="btn btn-primary button-85" (click)="openDialog()" style="margin-right: 10px;">
+      <div
+        style="margin-bottom:5px; margin-top: 30px; display: flex; gap: 10px; align-items: center; justify-content: center;">
+        <button class="btn btn-primary button-85" (click)="openDialog()">
           არიჩიე სიმღერა
         </button>
         <button class="btn btn-primary button-85" *ngIf="show" (click)="showPoema()">
@@ -21,10 +22,56 @@
         </button>
       </div>
 
+      <div style="padding-top: 30px; width: 330px; margin: 0 auto;position: relative; text-align: center;">
+        <img src="../assets/images/chven/no6.jpg" alt="" (click)="gaxsenWarsuli()" class="past">
+        <br>
+        <p style="font-weight: 600; font-size: 17px; color: #83c9d1;;">ჰანგები წარსულიდან</p>
+
+        <div class="modal fade" id="warsuli" tabindex="-1" role="dialog" aria-labelledby="addEmployeeModalLabel"
+          data-dismiss="modal" aria-hidden="true" style="position: absolute;width: 330px; top: 50px;">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content" style=" background-color: transparent; border: 0;">
+              <div
+                style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 25px;">
+
+                <button
+                  style="background-color: rgba(173, 37, 37, 0.401);padding: 7px; border-radius: 10px; color: #ff0000; border: 0; outline: 0; "
+                  data-dismiss="modal" class="closiko">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M7.75732 16.2426L16.2426 7.75736" stroke="red" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M16.2426 16.2426L7.75732 7.75736" stroke="red" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <button class="button-82-pushable" role="button" type="button" id="add-employee-form"
+                  data-dismiss="modal" (click)="play(13)">
+                  <span class="button-82-shadow"></span>
+                  <span class="button-82-edge"></span>
+                  <span class="button-82-front text">
+                    ვალენტინობა
+                  </span>
+                </button>
+
+                <button class="button-82-pushable" role="button" type="button" id="add-employee-form"
+                  data-dismiss="modal" (click)="play(14)">
+                  <span class="button-82-shadow"></span>
+                  <span class="button-82-edge"></span>
+                  <span class="button-82-front text">
+                    ინდურები
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
       <br>
       <br>
       <div *ngIf="manaxechemipoema" style="  border-radius: 20px;
-      box-shadow: rgba(48, 44, 44, 0.74) 0px 3px 8px; padding: 15px; margin-bottom: 10px;  text-align: left;">
+      box-shadow: rgba(48, 44, 44, 0.74) 0px 3px 8px; padding: 15px; margin-bottom: 10px;  text-align: center;">
 
 
         <p style="white-space: pre-wrap; text-align: left;color: #a8b5b5;font-family: ui-monospace; font-weight: 600;">
@@ -77,8 +124,8 @@
           მხარეებზე უნარების ამოცანა ვინ აგისხნა :*
         </p>
         <br>
-        <img *ngIf="show" src="../assets/images/sidess.png" alt="" width="450" height="250" style="border-radius: 10px;    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-          filter: grayscale(30%);">
+        <img *ngIf="show" src="../assets/images/sidess.png" alt="" width="450" height="250" style="border-radius: 10px; -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+          filter: grayscale(30%); ">
       </div>
 
     </div>
@@ -145,15 +192,6 @@
         no lyrics, first choose a song
       </p>
 
-      <p *ngIf="currentMusic.lyrics && currentMusic.title == 'Evergreen'"
-        style="text-align: left; color: #d2d8d2;font-weight: 500; font-family: system-ui; margin: 15px 0 0 0;">
-        ზოგჯერ რაღაცებმა მხოლოდ ჩვენს მოგონებებში უნდა იარსებოს, არა ?
-      </p>
-
-      <img *ngIf="currentMusic.lyrics && currentMusic.title == 'Evergreen'" src="../assets/images/albums/beautiful.jpg"
-        alt="" style="margin-top: 30px; width: 90%; ">
-
-
     </div>
 
 
@@ -168,6 +206,13 @@
         {{currentMusic.elaboration}}</p>
 
     </div>
+
+    <img *ngIf="currentMusic.lyrics && currentMusic.title == '14 თებერვალი'" src="../assets/images/chven/14teberva.jpg"
+      alt="" style="margin-top: 30px; width: 90%; margin-bottom: 30px; ">
+
+    <img *ngIf="currentMusic.lyrics && currentMusic.title == 'Evergreen'" src="../assets/images/albums/beautiful.jpg"
+      alt="" style="margin-top: 15px; width: 90%; margin-bottom: 30px; ">
+
 
 
   </div>
